@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物須知</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0066cc;
+            text-transform: uppercase;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+        }
+
+        ol {
+            margin-left: 20px;
+            list-style: decimal;
+            padding-left: 40px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .important {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .contact {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #0066cc;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .contact:hover {
+            background-color: #004c99;
+        }
+
+        .note {
+            font-style: italic;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* 表單樣式 */
+        .contact-form {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #004c99;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>購物須知</h1>
+    <p>歡迎您光臨我們的網上商店。在開始您的購物之前，請詳細閱讀以下購物須知：</p>
+    <ol>
+        <li><strong>下單流程：</strong>
+            <ol>
+                <li>選擇您想購買的商品並添加到購物車。</li>
+                <li>在結算頁面輸入您的送貨地址和聯繫信息。</li>
+                <li>選擇您喜歡的支付方式，完成付款。</li>
+                <li>確認訂單信息，提交訂單。</li>
+            </ol>
+        </li>
+        <li><strong>付款方式：</strong>
+            <ol>
+                <li>我們接受信用卡、借記卡和PayPal付款。</li>
+                <li>請確保您的支付信息正確無誤，以避免支付失敗。</li>
+            </ol>
+        </li>
+        <li><strong>送貨信息：</strong>
+            <ol>
+                <li>我們將在收到付款後儘快處理您的訂單。</li>
+                <li>運送時間根據您的送貨地址而有所不同。</li>
+                <li>如有延遲，我們將盡力通知您。</li>
+            </ol>
+        </li>
+        <li><strong class="important">退換貨政策：</strong>
+            <ol>
+                <li>如您收到的商品有損壞或品質問題，請在收貨後的48小時內與我們聯繫，我們將提供退換貨服務。</li>
+                <li>退換的商品必須保持原樣，不得影響二次銷售。</li>
+            </ol>
+        </li>
+    </ol>
+    <p>謝謝您閱讀我們的購物須知。如果您有任何問題或疑慮，請填寫以下表單與我們聯繫。</p>
+    <div class="contact-form">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">電子郵件：</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="message">訊息：</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">提交</button>
+    </div>
+    <p class="note">備註：請仔細閱讀上述須知，以便您在購物過程中有個愉快的體驗。</p>
+    <div class 
+    
+    
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // 獲取表單元素和按鈕元素
+                const contactForm = document.getElementById('contactForm');
+                const submitButton = contactForm.querySelector('button[type="submit"]');
+
+                // 處理提交表單的事件
+                submitButton.addEventListener('click', function () {
+                    // 在這裡進行表單提交的處理
+                    // 可以使用 AJAX 或其他方式將表單資料發送到後端伺服器
+                    // 這裡僅示範一個簡單的提示框
+                    alert('表單已提交！');
+                });
+            });
+        </script>
+
+</html>

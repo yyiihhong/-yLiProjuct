@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <h1>
+                    <span id="logo_title">N &nbsp &nbspLife</span>
+                </h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#" id="products-link">所有產品</a></li>
+                    <li><a href="./關於我們.html">關於我們</a></li>
+                    <li><a href="./購物須知.html">購物須知</a></li>
+                    <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#loginModal" id="accli">會員登入</a>
+                    <div class="modal fade" id="loginModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Header -->
+                                <div class="modal-header">
+                                    <h3>會員登入</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <!-- Body -->
+                                <div class="modal-body">
+                                    <!-- 登入表單 -->
+                                    <form>
+                                        <!-- email -->
+                                        <div class="form-group">
+                                            <input type="email" class="account form-control" placeholder="Email">
+                                        </div>
+                                        <!-- password -->
+                                        <div class="form-group">
+                                            <input type="password" class="password form-control" placeholder="Password">
+                                        </div>
+                                        <!-- checkbox -->
+                                        <div class="form-group">
+                                            <input type="checkbox" class="remember">記住我的密碼
+                                        </div>
+                                        <!-- 送出按鈕 -->
+                                        <button type="button" class="btn btn-info"> 登入 </button>
+                                    </form>
+
+                                </div>
+                                <!-- Footer -->
+                                <div class="modal-footer">
+                                    <div class="signup">
+                                        <span>尚未成為會員</span>
+                                        <a href="#" type="button" class="member"> 立即加入 </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <!-- cart icon -->
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                <!-- cart -->
+
+                <div class="cart">
+                    <h2 class="cart-title">Your cart</h2>
+
+                    <div class="cart-concent">
+                        <div class="cart-box"></div>
+                    </div>
+                    <!-- total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div id="total-amount">NT$0</div>
+                    </div>
+                    <!-- 購賣按鈕 -->
+                    <button type="button" class="btn-buy" onclick="showTotalAmount()">Buy Now</button>
+                    <!-- 關閉購物車 -->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="primary-content">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./圖片/images-4.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./圖片/images-5.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./圖片/images-6.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./圖片/images-7.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <section class="shop container">
+        <h2 class="section-title">產品目錄</h2>
+        <!-- concent -->
+        <div class="shop-content">
+
+            <div class="product-box">
+                <img src="./圖片/u990gr4_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">MADE US 990v6</h2>
+                <span class="price">NT$8800</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/w990bk6_nb_02_i-2.webp" alt="" class="product-img">
+                <h2 class="product-title">MADE US 990v6</h2>
+                <span class="price">NT$8680</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/u990tb4_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">MADE US 990v2 Core</h2>
+                <span class="price">NT$7980</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/w991gl_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">MADE US 991s</h2>
+                <span class="price">NT$7960</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/u998gr_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">MADE US 998 Core</h2>
+                <span class="price">NT$8430</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/m1906rb_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">1906</h2>
+                <span class="price">NT$4480</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/m1906rv_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">1906</h2>
+                <span class="price">NT$4480</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/bb550pb1_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">550</h2>
+                <span class="price">NT$3680</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/bb550sta_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">550</h2>
+                <span class="price">NT$3680</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src=".//圖片/m2002rsb_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">2002R</h2>
+                <span class="price">NT$4680s</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/uxc72ri_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">xc72</h2>
+                <span class="price">NT$2680</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/u9060hsa_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">9060</h2>
+                <span class="price">NT$4480</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/u327lu_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">327</h2>
+                <span class="price">NT$3280</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/u327wed_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">327</h2>
+                <span class="price">NT$3280</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/ml2002re_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">2002R</h2>
+                <span class="price">NT$4680/span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/ml574evg_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">574</h2>
+                <span class="price">NT$2880</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/ml574evg_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">574</h2>
+                <span class="price">NT$2880</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/bb550sta_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">550</h2>
+                <span class="price">NT$3680</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/u574al2_nb_02_i.webp" alt="" class="product-img">
+                <h2 class="product-title">574</h2>
+                <span class="price">NT$2880</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/mt31546dgl_nb_70_i.webp" alt="" class="product-img">
+                <h2 class="product-title">男款Ｔ</h2>
+                <span class="price">NT$1280</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="./圖片/mt31565ag_nb_40_i.webp" alt="" class="product-img">
+                <h2 class="product-title">男款帽Ｔ</h2>
+                <span class="price">NT$1240</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top-btn" onclick="scrollToTop()">
+        <i class='bx bx-chevron-up'></i>
+    </div>
+
+
+</body>
+<script src="./main1.js"></script>
+<script>
+
+</script>
+
+</html>

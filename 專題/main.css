@@ -1,0 +1,71 @@
+.primary-content {
+    background-color: darkslategray;
+    box-sizing: content-box;
+
+}
+
+.carousel .carousel-item {
+    width: 1180px;
+    height: 680px;
+    left: 10%;
+    right: 10%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.body1 {
+    height: 5px;
+    font-weight: 5px;
+    background-color: rgb(42, 91, 146);
+    right: 0;
+    bottom: 0;
+}
+
+.accimg{
+    right: 0%;
+    bottom: 0%;
+    height: 20px;
+    width: 20px;
+    
+
+}
+
+
+.buttoninter {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(27, 81, 135);
+    margin: 50px;
+}
+
+.modal-header h3 {
+    font-size: 30px;
+    color: rgb(212, 219, 85);
+    /* 置中 */
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    background-color: burlywood;
+}
+.modal-body form .btn {
+    width: 100%;
+    font-size: 25px;
+    color: white;
+}
+
+.modal-body form .account,
+.modal-body form .password {
+    margin: 30px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.remember {
+    margin-bottom: 20px;
+}
